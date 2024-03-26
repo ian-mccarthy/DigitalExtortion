@@ -1,0 +1,27 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+    h1 {
+      @apply font-mono;
+    }
+    body {
+      font-family: 'Roboto Mono', monospace;
+    }
+  }
+
+.title {
+    font-size: 2rem; /* Responsive font size */
+    font-weight: 700;
+}
+.subtitle {
+    font-size: 1.25rem; /* Responsive font size */
+    font-weight: 400;
+    padding-bottom: 15%;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}

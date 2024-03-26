@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Extortion: The Rise of Ransomware</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static',filename='dist/css/output.css')}}">
+    <link rel="icon" type="image/x-icon" href="{{url_for('static',filename='images/favicon.png')}}">
+
+    <style>
+        /* Initial state */
+        body {
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+    <body class="bg-blue-900 text-white">
+        <!-- Navigation Bar -->
+        <nav class="bg-blue-700 text-white p-4">
+            <div class="container mx-auto flex justify-between">
+                <a href="/home" class="font-bold">Home</a>
+                <div class="flex space-x-10">
+                    <a onclick="fadeOutAndRedirectToAbout()" href="javascript:void(0);">What is Ransomware?</a>
+                    <a onlick="fadeOutAndRedirect()" href="javascript:void(0);" class="nav-button">Insights</a>
+                    <a onlick="fadeOutAndRedirect()" href="javascript:void(0);" class="nav-button">Resources</a>
+                    <a onlick="fadeOutAndRedirect()" href="javascript:void(0);" class="nav-button">Contact</a>
+                </div>
+            </div>
+        </nav>
+</body>
+<script src="../static/src/script/script.js"></script>
+</html>

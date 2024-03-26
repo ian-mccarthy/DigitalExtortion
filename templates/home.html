@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Extortion: The Rise of Ransomware</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static',filename='dist/css/output.css')}}">
+    <link rel="icon" type="image/x-icon" href="{{url_for('static',filename='images/favicon.png')}}">
+
+
+    <style>
+        /* Initial state */
+        body {
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+    <body class="bg-blue-900 text-white">
+        <!-- Navigation Bar -->
+        <nav class="bg-blue-700 text-white p-4">
+            <div class="container mx-auto flex justify-between">
+                <a href="/home" class="font-bold">Home</a>
+                <div class="flex space-x-10">
+                    <a onclick="fadeOutAndRedirectToAbout()" href="javascript:void(0);">What is Ransomware?</a>
+                    <a onlick="fadeOutAndRedirect()" href="javascript:void(0);" class="nav-button">Insights</a>
+                    <a onlick="fadeOutAndRedirect()" href="javascript:void(0);" class="nav-button">Resources</a>
+                    <a onlick="fadeOutAndRedirect()" href="javascript:void(0);" class="nav-button">Contact</a>
+                </div>
+            </div>
+        </nav>
+        <!-- Content -->
+        <div class="container flex flex-col justify-center items-center mx-auto mt-8">
+            <h2 class="text-xl font-bold mb-10">Welcome to Digital Extortion</h2>
+            <h3 class="text-lg text-blue-300 mb-2">About this website</h3>
+
+            <div class="text-sm inline-block p-2 mr-60 ml-60">
+                    <p>
+                        This website is an examination of ransomware, its storied history and why it has come into the limelight in the past decade.
+                        Check out the 'What is Ransomware' section to learn the basics.
+                        The site also includes various data visualisations and analysis, and a real-time cyber-attack map, which can be viewed in the 'Insights' section. Check out the 'Resources'
+                        section for some basic tips to ensure a safe, enjoyable online experience, and further reading resources on online security and ransomware.
+                    </p>
+            </div>
+
+            <h3 class="text-lg text-blue-300 mt-16 mb-2">About me</h3>
+            <div class="text-sm inline-block p-2 mr-60 ml-60">
+                <p>
+                    My name's Ian McCarthy, and I'm currently a 4th Year student of the BA in Digital Humanities and Information Technology in UCC.
+                    I also studied Sociology as a minor field throughout my course. My interest in Cybersecurity bloomed many, many years ago;
+                    as soon as I became interested in computers, I became interested in the idea of 'hacking' (much more so than the security side of things!).
+                    I played around with virtual machines, tools like Nmap and Kali Linux, and spent lots of time watching highly inaccurate hacking TV shows in my teenage years 
+                    (Mr. Robot is surprisingly true to life, if you're looking for one)!
+                </p>
+                <br>
+                <p>
+                    This interest in computing led to choosing BADHIT in college, which caught my eye in particular because of the wide array of disciplines covered. 
+                    The course didn't look to me like your typical computing course, incorporating the arts and really delving into how the digital shift is affecting our lives and societies.
+                    My studies fostered a new interest in web development as we covered topics like HTML, CSS, PHP, and web design, an area I still enjoy very much, as I hope is evident by this website!
+                    I also grew to adore Python, especially its robust data analysis and visualisation, as we worked with libraries like Pandas and Matplotlib.
+                </p>
+                <br>
+                <p>    
+                    I had almost forgotten about my budding interest in Cybersecurity until I met some future colleagues from Smarttech247 at the UCC Spring Careers Fair, 
+                    while on the hunt for a tech-focused work placement opportunity. Luckily, they offered me a 6-month placement in a Python automation role, honing my skills with Python, 
+                    and reinvigorating that interest in Cybersecurity. I am currently still employed with Smarttech on a part-time basis, and they kindly accepted my request to circulate a questionnaire
+                    to learn more about ransomware, its impacts, and the overall landscape of the Cybersecurity field.  
+                </p>
+                <br>
+                <p>
+                    If you're done reading that boring tirade about me, please check out the rest of the site, and don't hesitate to reach out with questions, feedback, or concerns in the 'Contact' section. Thank you!
+                </p>
+            </div>
+        </div>
+</body>
+<script src="../static/src/script/script.js"></script>
+</html>
